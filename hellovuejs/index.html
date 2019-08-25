@@ -12,13 +12,15 @@
         <h2 v-text="message"></h2>
     </div>
     <script type="text/javascript">
+        // 모델 객체 (데이터를 가지고 있다)
         var model = {
             message: '첫 번째 Vue.js 앱입니다.'
         };
-
+        // Vue 객체이자 ViewModel
+        // 데이터(모델)가 변경 되면 뷰모델 객체는 즉시 HTML 요소(View)에 반영시킵니다.
         var simple = new Vue({
-            el: '#simple',
-            data: model
+            el: '#simple', // HTML 요소 (View)
+            data: model // 모델 객체 참조
         })
     </script>
 
