@@ -20,7 +20,7 @@
         </p>
         <p>
             <button id="deposit" v-on:click="balance += parseInt(amount)" class="btn btn-primary">예금</button>
-            <button id="deposit" v-on:click="balance -= parseInt(amount)" class="btn btn-primary">인출</button>
+            <button id="with" v-on:click="balance -= parseInt(amount)" class="btn btn-primary">인출</button>
         </p>
         <h3>계좌 잔고 : {{balance}}</h3>
     </div>
