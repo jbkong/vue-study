@@ -9,14 +9,15 @@
 
 <body>
     <div id="app">
-        <app-header></app-header>
+        <app-header v-bind:propsdata="num"></app-header>
         <app-content v-on:pass="deliverNum"></app-content>
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
     <script>
         const appHeader = {
-            template: '<div>header</div>'
+            template: '<div>header num={{ propsdata }}</div>',
+            props: ['propsdata']
         }
 
         const appContent = {

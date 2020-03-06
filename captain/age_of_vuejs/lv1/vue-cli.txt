@@ -1,0 +1,5 @@
+vue --version
+
+vue create vue-cli
+cd vue-cli
+npm run serve
