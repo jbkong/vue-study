@@ -4,7 +4,7 @@
       <span class="addContainer" @click="addTodo">
         <i class="fas fa-plus addBtn"></i>
       </span>
-      <Modal v-if="showModal" @close="showModal = false">
+      <modal v-if="showModal" @close="showModal = false">
       <h3 slot="header">
         경고 
         <i class="closeModalBtn fa fa-times" 
@@ -21,14 +21,14 @@
 import Modal from './common/Modal.vue'
 
 export default {
-  data: function() {
+  data() {
     return {
       newTodoItem: "",
       showModal: false
     }
   },
   methods: {
-    addTodo: function() {
+    addTodo() {
       if (this.newTodoItem !== '') {
         this.$emit('addTodoItem', this.newTodoItem);
         this.clearInput();
@@ -36,12 +36,12 @@ export default {
         this.showModal = !this.showModal;
       }
     },
-    clearInput: function() {
+    clearInput() {
       this.newTodoItem = '';
     }
   },
   components: {
-    Modal: Modal
+    Modal
   }
 }
 </script>
