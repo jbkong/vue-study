@@ -1,0 +1,6 @@
+https://github.com/joshua1988/LearnWebpack
+
+npm install --save-dev webpack
+
+1.
+webpack app/index.js --output dist/bundle.js --mode development
