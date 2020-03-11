@@ -4,3 +4,6 @@ npm install --save-dev webpack
 
 1.
 webpack app/index.js --output dist/bundle.js --mode development
+
+// webpack 설정값
+https://webpack.js.org/configuration/
