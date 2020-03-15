@@ -7,3 +7,5 @@ webpack app/index.js --output dist/bundle.js --mode development
 
 // webpack 설정값
 https://webpack.js.org/configuration/
+
+https://webpack.js.org/guides/development/#using-webpack-dev-middleware
