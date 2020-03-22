@@ -12,6 +12,7 @@ export default new Vuex.Store({
         ask: [],
         user: {},
         item: {},
+        list: [],
     },
     getters: {
         fetchedAsk(state) {
