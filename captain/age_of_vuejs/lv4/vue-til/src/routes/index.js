@@ -19,6 +19,18 @@ export default new VueRouter({
       component: () => import('@/views/SignupPage.vue'),
     },
     {
+      path: '/main',
+      component: () => import('@/views/MainPage.vue'),
+    },
+    {
+      path: '/add',
+      component: () => import('@/views/PostAddPage.vue'),
+    },
+    {
+      path: '/post/:id',
+      component: () => import('@/views/PostEditPage.vue'),
+    },
+    {
       path: '*',
       component: () => import('@/views/NotFoundPage.vue'),
     }
